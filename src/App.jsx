@@ -1,14 +1,14 @@
 import "./App.css"
-import { Navbar } from "./Navbar/Navbar"
-import { Footer } from "./Footer/Footer"
-import { Main } from "./Main/Main"
+import { Navbar } from "./componets/Navbar/Navbar"
+import { Footer } from "./componets/Footer/Footer"
+import { Banner } from "./componets/Banner/Banner"
 
 function App() {
 
   return (
     <div>
       <Navbar/>
-      <Main/>
+      <Banner/>
       <Footer/>
     </div>
   )
