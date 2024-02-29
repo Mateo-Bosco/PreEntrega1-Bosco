@@ -1,4 +1,5 @@
 import "./Navbar.css"
+import { Link } from "react-router-dom";
 export const Navbar = ()=>{
     return ( 
     <div className="nav-container">
@@ -7,7 +8,7 @@ export const Navbar = ()=>{
             <h2 className="links">Playstation</h2>
             <h2 className="links">Xbox</h2>
             <h2 className="links">Consolas portátiles</h2>
-            <h2 className="seeCarrito">🛒</h2>
+            <Link className="seeCarrito" to={"cart"}>🛒</Link>
         </nav>
     </div>
     );

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Playstation 4",
+        "marca": "Playstation",
+        "precio": "500000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348295/4859741fc0a30dbefd88d70f23ad31d5_z3ecnn.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Playstation 5",
+        "marca": "Playstation",
+        "precio": "1200000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348194/cd43672a63f6356bd4199d4ae6d1d480_whndaw.jpg"
+    }
+]

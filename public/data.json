@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Playstation 4",
+        "marca": "Playstation",
+        "precio": "500000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348295/4859741fc0a30dbefd88d70f23ad31d5_z3ecnn.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Playstation 5",
+        "marca": "Playstation",
+        "precio": "1200000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348194/cd43672a63f6356bd4199d4ae6d1d480_whndaw.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Xbox series S",
+        "marca": "Xbox",
+        "precio": "550000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348370/0e6910baa26ca378e54da0b05475e60b_olzuzw.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Xbox series X",
+        "marca": "Xbox",
+        "precio": "850000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348386/cdef37d49df388a45bb1137297b087e0_ncl1kf.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Nintendo switch",
+        "marca": "Nintendo",
+        "precio": "550000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348337/24b50b4196e3b4471902ea5243670f56_ped7yr.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Steam deck",
+        "marca": "Steam deck",
+        "precio": "1300000",
+        "img": "https://res.cloudinary.com/dkekabdhg/image/upload/v1707348471/ae1e7735bd78ee76704bcf3f482b9c8d_f7jmdb.jpg"
+    }
+]
