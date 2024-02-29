@@ -1,20 +1,27 @@
 import "./App.css"
+import { Navbar } from "./componets/layout/Navbar/Navbar";
 import { Home } from "./componets/Home/Home";
-import { CartContent } from "./componets/CartContent/CartContent";
-import { DataProvider } from "./componets/Context/DataContext";
+// import { ItemListContainer } from "./Pages/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Art } from "./Pages/Art/Articulos";
+import { Cart } from "./componets/common/Cart";
 
 function App() {
 
   return (
-    <DataProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/cart" element={<CartContent />}/>
-        </Routes>
-      </BrowserRouter>
-    </DataProvider>
+    <>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Art" element={<Art/>}/>
+        <Route path="/Cart" element={<Cart/>}/>
+      </Routes>
+      {/* <ItemListContainer/> */}
+      {/* <Banner/>
+      <Footer/> */}
+    </BrowserRouter>
+    </>
   )
 }
 

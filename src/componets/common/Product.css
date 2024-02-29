@@ -1,0 +1,33 @@
+.div-madre{
+    text-align: center;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.215);
+}
+.div-padre{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+    .card img{
+    max-width: 160px;
+    max-height: 350px;
+}
+.img-card{
+    height: 170px;
+}
+.card-title{
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(20, 20, 20, 0.753);
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.boton{
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+}

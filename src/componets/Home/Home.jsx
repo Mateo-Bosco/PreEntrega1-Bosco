@@ -1,16 +1,12 @@
-import { Navbar } from "../Navbar/Navbar"
-import { Footer } from "../Footer/Footer"
-import { Banner } from "../Banner/Banner"
-import { Products } from "../Products/Products";
+import "./Home.css"
+import { Banner } from "../layout/Banner/Banner"
+import { Footer } from "../layout/Footer/Footer"
+
 export const Home = () => {
     return (
-    <>       
-        <Navbar/>
+        <>
         <Banner/>
         <Footer/>
-        <div className="product-card-container">
-            <Products/>
-        </div>
-    </>
-    );
-};
+        </>
+    )
+}
