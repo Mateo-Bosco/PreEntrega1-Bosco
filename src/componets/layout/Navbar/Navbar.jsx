@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"
 import { Art } from "../../../Pages/Art/Articulos";
+import { CartWidget } from "../../common/CartWidget";
 
 export const Navbar = ()=>{
     return ( 
     <div className="nav-container">
         <nav className="navbar">
-            <img className="navbar-logo" src="https://res.cloudinary.com/dkekabdhg/image/upload/v1707349283/logo_i50smu.png" alt="" />
-            <Link className="links" to="/">Home</Link>
+            <Link to={"/"}>
+                <img className="navbar-logo" src="https://res.cloudinary.com/dkekabdhg/image/upload/v1707349283/logo_i50smu.png" alt="" />
+            </Link>
             <Link className="links" to="/Art">Nuestros productos</Link>
-            <h2 className="links">Playstation</h2>
-            <h2 className="links">Xbox</h2>
-            <h2 className="links">Consolas portátiles</h2>
-            <Link className="seeCarrito" to="/Cart">🛒</Link>
+            <Link className="links" to="/category/playstation">Playstation</Link>
+            <Link className="links" to="/category/xbox">Xbox</Link>
+            <Link className="links" to="/category/portatil">Consolas portátiles</Link>
+            <div className="cart-navbar">
+                <CartWidget/>
+            </div>
         </nav>
     </div>
     );

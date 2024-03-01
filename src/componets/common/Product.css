@@ -2,6 +2,7 @@
     text-align: center;
     border-color: black;
     background-color: rgba(0, 0, 0, 0.215);
+    max-width: 200px;
 }
 .div-padre{
     display: flex;
@@ -30,4 +31,24 @@
     border-radius: 5px;
     width: 50%;
     cursor: pointer;
+}
+.boton-suma{
+    width: 25px;
+    border-radius: 7px;
+    background-color: white;
+    cursor: pointer;
+    font-size: medium;
+    margin: 7px;
+    color: brown;
+}
+.div-grande{
+    color: white;
+}
+.comprar{
+    height: 30px;
+    width: 110px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: coral;
+    color: rgba(255, 127, 80, 0.635);
 }

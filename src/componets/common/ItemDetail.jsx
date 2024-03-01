@@ -1,8 +1,7 @@
-// import { ItemCount } from "./ItemCount";
+import { ItemCount } from "./ItemCount";
 
 
-
-export const ItemDetail = ({ description, img, img, stock }) => {
+export const ItemDetail = ({ description, img, price, stock }) => {
     return (
         <div className="div-madre">
             <div className="card">

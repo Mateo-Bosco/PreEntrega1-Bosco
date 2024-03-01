@@ -2,18 +2,26 @@ import { useEffect, useState } from "react";
 import { ItemList} from "../componets/common/ItemList"
 import { getProducts } from "../asyncMock";
 import "./Item.css"
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
+    const { category } = useParams();
     const [products, setProducts] = useState([]);
     const [isLoading, setisLoading] = useState(true);
 
     useEffect( () => {
+        setisLoading(true);
         getProducts()
         .then( resp => {
-            setProducts(resp);
+            if(category) {
+                const productsFilter = resp.filter( product => product.category == category );
+                setProducts(productsFilter);
+            } else {
+                setProducts(resp);
+            }
             setisLoading(false);
         } )
-    }, [] )
+    }, [category] )
 
     return (
         <>
