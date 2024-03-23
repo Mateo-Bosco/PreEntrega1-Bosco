@@ -1,17 +1,21 @@
 import { useState } from "react";
 
-export const ItemCount = ({ stock, initial = 1}) => {
-    const [count, setCount] = useState(initial);
+export const ItemCount = ({ stock, onAdd }) => {
+    const [count, setCount] = useState(1);
 
     const increment = () => {
         if (count < stock) {
             setCount(count + 1);
+        } else {
+            alert("stock maximo")
         }
     };
 
     const decrement = () => {
         if (count > 0) {
             setCount(count - 1);
+        } else {
+            alert("No puede ser menos de 1")
         }
     };
 

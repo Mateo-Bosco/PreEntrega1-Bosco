@@ -11,17 +11,25 @@ export const ItemDetailContainer = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        getProduct(id)
-        .then(resp => {
+        getProduct(+id)
+        .then((resp) => {
             setItem(resp);
             setIsLoading(false);
         });
-    }, [])
+    }, [id])
 
+    const onAdd = ( cantidad )=>{
+        console.log(item)
+
+    }
     
     return (
         <>
-        {isLoading ? <img className="img-loading" src="https://res.cloudinary.com/dkekabdhg/image/upload/v1709235076/b44e229598a8bdb7f2f432f246fb0813_qfek4q.gif" alt="" /> : <ItemDetail {...item} />}
+        {isLoading ? (
+        <img className="img-loading" src="https://res.cloudinary.com/dkekabdhg/image/upload/v1709235076/b44e229598a8bdb7f2f432f246fb0813_qfek4q.gif" alt="" />
+        ) : (
+        <ItemDetail {...item} onAdd={onAdd} />
+        )}
         </>
     )
 }
